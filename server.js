@@ -4,7 +4,7 @@ const express = require("express");
 
 const app = express()
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 app.get('/calc/:num1/:num2', (request,response) => {
     console.log("you are in get calc")
